@@ -402,7 +402,7 @@ html {
   .myName {
     font-size: 20px;
     text-align: center;
-    padding: 200px 0;
+    padding: 100px 0;
   }
 
   .myName h1 {
@@ -459,15 +459,15 @@ html {
   /* スキル */
 
   .skill {
-    width: 100%;
-    margin: 20px 20px;
+    width: 80%;
+    margin: 10px 10px;
     /* display: flex;
     flex-wrap: wrap; */
   }
 
   .skill img {
-    width: 200px;
-    height: 210px;
+    width: 100px;
+    height: 110px;
     object-fit: contain;
     padding: 0 100px;
     margin: 20px 40px 20px 40px;
@@ -521,12 +521,12 @@ html {
   /* work */
 
   .work {
-    width: 100%;
+    width: 90%;
     
   }
 
   .container-box {
-    margin: 50px 50px;
+    margin: 20px 20px;
   }
 
   .container-box img {
@@ -537,7 +537,7 @@ html {
   .container-box p {
     text-align: center;
     /* opacity: 0; */
-    transition: 1s;
+    /* transition: 1s; */
     font-size: 20px;
     margin-bottom: 70px;
   }
@@ -550,7 +550,7 @@ html {
 .contact {
     /* margin: 50px 100px; */
     width: 100%;
-    margin: 50px 50px;
+    margin: 30px 30px;
     height: 300px;
   }
 
@@ -577,13 +577,13 @@ html {
   }
 
   .contact input {
-    width: 350px;
+    width: 250px;
     height: 3em;
     margin: 20px 0;
   }
 
   .contact textarea {
-    width: 350px;
+    width: 250px;
     height: 10em;
     /* margin-left: 20px; */
   }
