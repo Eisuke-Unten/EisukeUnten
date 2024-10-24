@@ -25,7 +25,7 @@ html {
     /* background: url(https://mpreview.aflo.com/UwYsjY55MseL/afloimagemart_243126973.jpg); */
     background: url(https://img.freepik.com/premium-photo/multi-exposure-of-abstract-programming-language-hologram-on-abstract-empty-interior-background-artificial-intelligence-and-machine-learning-concept_258654-38176.jpg);
 
-   
+
     /* opacity: 0.7; */
     background-size: cover;
   }
@@ -147,174 +147,196 @@ html {
     font-family: Caveat, cursive;
   }
 
-  .animate {
-    opacity: 0;
-    transition: opacity 5s, transform 1s;
-    transform: translateY(100px);
+  /* .animate {
+    opacity: 1;
+    transition:  opacity 1s, transform 1s;
+    transform:  translateY(100px);
   }
 
   .animate.appear {
     opacity: 1;
     transform: none;
-  }
+    transform:  translateY(100px);
+} */
 
-  .ability p {
-    font-size: 60px;
-    text-shadow: 8px 8px 8px rgb(26, 219, 219);
-  }
+.animate {
+  animation-name: animate;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
 
-  .ability span {
-    font-size: 30px;
-  }
-
-  /* 実績 */
-
-  .news {
-    border: 3px solid grey;
-    margin: 0 400px;
-    padding: 20px;
-    height: 300px;
-    overflow: scroll;
-  }
-
-  .cont a {
-    color: blue;
-  }
-
-  .dd {
-    border-bottom: 1px solid gray;
-    padding: 10px 0;
-  }
-
-  /* work */
-
-  .work {
-    width: 1550px;
-    margin-left: 40px;
-    overflow: scroll;
-  }
-
-  .container-box {
-    display: flex;
-    margin: 50px 80px 0 80px;
-  }
-
-  .container-box img {
-    width: 400px;
-    height: 300px;
-  }
-
-  .container-box p {
-    text-align: center;
+@keyframes animate {
+  0%{
     opacity: 0;
-    transition: 1s;
-    font-size: 20px;
+    transform:translateY(0px);
   }
-
-  .container-box p:hover {
+  100% {
     opacity: 1;
-    transition: 1s;
+    transform: translateY(100px);
+  }
+}
+
+
+
+
+.ability p {
+  font-size: 60px;
+  text-shadow: 8px 8px 8px rgb(26, 219, 219);
+}
+
+.ability span {
+  font-size: 30px;
+}
+
+/* 実績 */
+
+.news {
+  border: 3px solid grey;
+  margin: 0 400px;
+  padding: 20px;
+  height: 300px;
+  overflow: scroll;
+}
+
+.cont a {
+  color: blue;
+}
+
+.dd {
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+
+/* work */
+
+.work {
+  width: 1550px;
+  margin-left: 40px;
+  overflow: scroll;
+}
+
+.container-box {
+  display: flex;
+  margin: 50px 80px 0 80px;
+}
+
+.container-box img {
+  width: 400px;
+  height: 300px;
+}
+
+.container-box p {
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+  font-size: 20px;
+}
+
+.container-box p:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.onsen img {
+  margin: 0 40px;
+}
+
+/* お問い合わせ */
+
+.contact {
+  margin: 300px 400px;
+  height: 500px;
+}
+
+.BackgroundAnimation {
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #faeae5, #f2e3e9, #def0f7, #d1efe8);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
 
-  .onsen img {
-    margin: 0 40px;
+  50% {
+    background-position: 100% 50%;
   }
 
-  /* お問い合わせ */
-
-  .contact {
-    margin: 300px 400px;
-    height: 500px;
+  100% {
+    background-position: 0% 50%;
   }
+}
 
-  .BackgroundAnimation {
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background: linear-gradient(-45deg, #faeae5, #f2e3e9, #def0f7, #d1efe8);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-  }
+.contact input {
+  width: 500px;
+  height: 2em;
+  margin: 30px 0;
+}
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
+.contact textarea {
+  width: 500px;
+  height: 10em;
+  margin-left: 210px;
+}
 
-    50% {
-      background-position: 100% 50%;
-    }
+.submit button {
+  background-color: #fff;
+  border: solid 2px #191970;
+  color: #191970;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0 5px 0 #191970;
+  display: inline-block;
+  transition: .3s;
+  margin: 50px 350px;
+}
 
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  .contact input {
-    width: 500px;
-    height: 2em;
-    margin: 30px 0;
-  }
-
-  .contact textarea {
-    width: 500px;
-    height: 10em;
-    margin-left: 210px;
-  }
-
-  .submit button {
-    background-color: #fff;
-    border: solid 2px #191970;
-    color: #191970;
-    border-radius: 20px;
-    padding: 10px 30px;
-    text-decoration: none;
-    font-size: 1em;
-    box-shadow: 0 5px 0 #191970;
-    display: inline-block;
-    transition: .3s;
-    margin: 50px 350px;
-  }
-
-  .submit button:hover {
-    color: #191970;
-    transform: translateY(5px);
-    box-shadow: 0 0 0 #191970;
-  }
+.submit button:hover {
+  color: #191970;
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #191970;
+}
 
 
-  /* API */
+/* API */
 
-  header {
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: background-color .4s;
-    z-index: 3;
-  }
+header {
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color .4s;
+  z-index: 3;
+}
 
-  /* header.scrolled {
+/* header.scrolled {
   background-color: #ffffffc8 !important;
 } */
 
-  #to_top {
-    position: fixed;
-    right: 16px;
-    bottom: 16px;
-    opacity: 0;
-  }
+#to_top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  opacity: 0;
+}
 
-  #to_top.scrolled {
-    opacity: 1;
-  }
+#to_top.scrolled {
+  opacity: 1;
+}
 
-  #to_top i {
-    font-size: 32px;
-    color: #01bff9;
-  }
-
+#to_top i {
+  font-size: 32px;
+  color: #01bff9;
+}
 
 }
+
 
 @media (max-width: 599px) {
 
@@ -479,16 +501,35 @@ html {
     font-family: Caveat, cursive;
   }
 
-  .animate {
+  /* .animate { */
     /* opacity: 0; */
-    transition: opacity 1s, transform 3s;
+    /* transition: opacity 1s, transform 3s;
     transform: translateY(100px);
-  }
+  } */
 
-  .animate.appear {
+  /* .animate.appear {
     opacity: 1;
     transform: none;
-  }
+  } */
+
+    .animate {
+      animation-name: animate;
+      animation-fill-mode: forwards;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+    }
+  
+    @keyframes animate {
+      0% {
+        opacity: 0;
+        transform: translateY(0px);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(50px);
+      }
+    }
 
   .ability p {
     font-size: 30px;
@@ -546,7 +587,7 @@ html {
     transition: 1s;
   } */
 
-.contact {
+  .contact {
     /* margin: 50px 100px; */
     width: 100%;
     margin: 30px 30px;
